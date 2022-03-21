@@ -1,6 +1,6 @@
 import 'dart:io';
 
-void crearCaja({required int ancho,required int alto,String caracter='*',bool vacio=false,String color="0"}) {
+void crearCaja(int arg,{required int ancho,required int alto,String caracter='*',bool vacio=false,String color="0"}) {
   stdout.write("\u{1B}[${color}m");
   if(vacio) {
     for (int y = 0; y < alto; y++) {
@@ -30,7 +30,7 @@ void crearCaja({required int ancho,required int alto,String caracter='*',bool va
 
 main(){
   print('\u{1B}[36mAAA\u{1B}[41mBBB\u{1B}[0mCCC');
-  crearCaja(ancho:100,alto:7,caracter: "0",vacio: true,color:"36");
-  crearCaja(ancho:30,alto:7,caracter: "0",vacio: true,color:"37");
-  crearCaja(ancho:10,alto:10,vacio: true,color:"33");
+  crearCaja(0,ancho:100,alto:7,caracter: "0",vacio: true,color:"36");
+  crearCaja(0,ancho:30,alto:7,caracter: "0",vacio: true,color:"37");
+  crearCaja(0,ancho:10,alto:10,vacio: true,color:"33");
 }
