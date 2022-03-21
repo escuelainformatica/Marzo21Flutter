@@ -1,1 +1,1 @@
-# Marzo21Flutter
+A simple command-line application.
